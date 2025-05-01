@@ -1,4 +1,5 @@
-require 'options'
-require 'keymaps'
-require 'autocmds'
-require './lua/lazy'
+require("options")
+require("keymaps")
+require("autocmds")
+require("./lua/lazy")
+require("./lua/health")
