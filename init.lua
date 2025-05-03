@@ -1,5 +1,5 @@
 require("options")
 require("keymaps")
 require("autocmds")
-require("./lua/lazy")
-require("./lua/health")
+require("package_manager")
+require("health")
