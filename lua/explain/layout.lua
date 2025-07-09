@@ -1,13 +1,16 @@
 local Layout = require("nui.layout")
 local Popup = require("nui.popup")
-local notify = require("noice")
+local Input = require("nui.input")
 
 local layout = nil
 
 local function mount_explain_layout()
-	local top_popup = Popup({ border = "double" })
-	local bottom_left_popup = Popup({ border = "single" })
-	local bottom_right_popup = Popup({ border = "single" })
+	local input = Input({}, {
+		prompt = "> ",
+	})
+
+	local left_popup = Popup({ border = "single" })
+	local right_popup = Popup({ border = "single" })
 
 	layout = Layout(
 		{
@@ -18,10 +21,10 @@ local function mount_explain_layout()
 			},
 		},
 		Layout.Box({
-			Layout.Box(top_popup, { size = "40%" }),
+			Layout.Box(input, { size = "40%" }),
 			Layout.Box({
-				Layout.Box(bottom_left_popup, { size = "50%" }),
-				Layout.Box(bottom_right_popup, { size = "50%" }),
+				Layout.Box(left_popup, { size = "50%" }),
+				Layout.Box(right_popup, { size = "50%" }),
 			}, { dir = "row", size = "60%" }),
 		}, { dir = "col" })
 	)
