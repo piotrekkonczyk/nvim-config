@@ -4,3 +4,5 @@ require("autocmds")
 require("package_manager")
 require("health")
 require("custom")
+
+vim.cmd.colorscheme("catppuccin")
