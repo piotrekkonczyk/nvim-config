@@ -7,7 +7,7 @@ return {
 		require("catppuccin").setup({
 			float = { transparent = true, solid = false },
 			transparent_background = true,
-			flavour = "mocha",
+			flavour = "macchiato",
 			integrations = {
 				notify = true,
 			},
