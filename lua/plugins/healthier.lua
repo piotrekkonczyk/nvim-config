@@ -1,3 +1,0 @@
-return {
-	"piotrekkonczyk/healthier.nvim",
-}
